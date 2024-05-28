@@ -1,0 +1,16 @@
+<a href="/dashboard/posts"><button id="new-post">Create New Post</button></a>
+{{#each blogposts}}
+
+{{#if userBlog}}
+{{#each userBlog as |blogpost|}}
+<div class="blogpost"> 
+    <a class="post-link" href="/blogpost/{{blogpost.id}}"></a>
+        <h2 id="currentBlogpost">{{blogpost.title}}</h2>
+        <h3> {{blogpost.user.username}} on {{format_date blogpost.createdAt}}</h3>
+        <p>{{blogpost.body}}</p>
+    </a>
+</div>
+
+{{/each}}
+{{else}}
+{{/if}}

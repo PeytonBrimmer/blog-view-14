@@ -1,0 +1,57 @@
+<div class="blogpost">
+  <h2 id="currentBlogpost">{{blogpost.title}}</h2>
+  <h3> {{blogpost.user.username}} on {{format_date blogpost.createdAt}}</h3>
+  <p>{{blogpost.body}}</p>
+</div>
+
+{{#if (equals user_id blogpost.user.id)}}
+  <a href="/blogpost/{{blogpost.id}}/edit">Edit</a>
+  <a href="/blogpost/{{blogpost.id}}/delete">Delete</a>
+
+  <script src-"/jsdeletepost.js"></script>
+{{/if}}
+
+{{!-- {{! Path: views/blogpost-edit.handlebars }} --}}
+
+{{#if blogpost.comments}}
+<div>
+    <h3>Comments</h3>
+    {{#each blogpost.comments}}
+        <div class="comment">
+        <h4>{{user.username}} on {{format_date createdAt}}</h4>
+        <p>{{comment}}</p>
+        </div>
+    {{/each}}
+    {{/if}}
+    </div>
+
+    {{#if user}}
+    <form action="/blogpost/{{blogpost.id}}/comment" method="POST">
+        <h3>Leave a Comment</h3>
+        <label for="comment">Comment</label>
+        <input type="text" id="commment" name="user_id" value="{{user.id}}" required>
+        <textarea name="comment" placeholder="Comment"></textarea>
+        <button type="submit">Post</button>
+    </form>
+   
+   <script src="/js/comment.js"></script>
+    {{/if}}
+    {{!-- {{! Path: views/blogpost-edit.handlebars }} --}}
+    {{!-- {{#if blogpost.comments}} --}}
+
+    {{#if blogpost.comments}}
+        <div id="post-id" style="display: none;">{{blogpost.id}}</div>
+        <form class="form" id="blogpost-form">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" value="{{blogpost.title}}" required>
+            <label for"body">Post</label>
+            <input type="text" id ="blogpost-body" name="body" value="{{blogpost.body}}" required>
+            <button type="submit">Edit Post</button>
+        </form>
+
+    <script src="/js/editpost.js"></script>
+    {{/if}}
+    {{!-- {{! Path: views/blogpost.handlebars }} --}}
+    {{!-- {{#each blogposts}} --}}
+
+    {{#each blogposts}}

@@ -1,0 +1,9 @@
+{{#each blog as |post|}}
+  <div class="blogpost">
+    <a class="post-link" href="/blogpost/{{post.id}}">
+    <h2>{{post.title}}</h2>
+    <h3>{{post.user.username}} on {{format_date post.createdAt}}</h3>
+    <p>{{post.body}}</p>
+    </a>
+  </div>
+{{/each}} 
