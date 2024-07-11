@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Blog</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>The Tech Blog</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
-        <H1>THE WORLDS BEST TECH BLOG OF ALL TIME IN THE WHOLE ENTIRE WORLD EVERRRRRR!!!!!!</H1>
-        
+        <h1>The Tech Blog</h1>
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/dashboard">Dashboard</a></li>
-                <li><a href="/login">Log in</a></li>
-                <li><a href="/signup">Sign Up</a></li>
-            </ul>
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            {{#if logged_in}}
+            <a href="/logout">Log out</a>
+            {{else}}
+            <a href="/login">Log in</a>
+            {{/if}}
         </nav>
     </header>
-
-    {{ body}}
-    <script src="script.js"></script>
+    {{{ body }}}
 </body>
 </html>

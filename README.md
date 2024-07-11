@@ -1,8 +1,12 @@
 # tech-blog website!!!
 ## project 14
+In this tech blog website we are using a database, api, and handlebars to create a psuedo social media application that will allow all of the very real and active users to create, edit and delete posts. Each user is required to log into the website so that our database can save their posts and info accordingly. Each user is required to login with a typical username and password.
 
-## In this tech blog website we are using a database, api, and handlebars to create a psuedo social media application that will allow all of the very real and active users to create, edit and delete posts. Each user is required to log into the website so that our database can save their posts and info accordingly. Each user is required to login with a typical username and password.
-# --------
+_____________________________________________
+
+
+
+
 # USER STORY    
 ## AS A developer who writes about tech
 I WANT a CMS-style blog site

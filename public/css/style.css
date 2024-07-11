@@ -1,0 +1,184 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;   
+}
+
+.button-container a {
+    width: 90%;
+}
+
+#update-post, #delete-post {
+    margin: 10px;
+    width: 80%;
+    background-color: darkslategrey;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#create-post {
+    margin-top: 10px;
+    background-color: rgb(255, 42, 0);
+    color: black;
+    padding: 10 px 0px 0px 0px;
+    font-size: 2em;
+    text-align: center;
+}
+
+#blogpost-form {
+    margin-top: 10px;
+}
+
+header {
+    background-color: grey;
+    margin: 5px;
+    padding: 5px 30px 20px 30px; 
+}
+
+nav {
+    background-color: darkslategrey;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    margin-right: 40px;
+    text-decoration: none;
+    background-color: black;
+}
+
+form {
+    margin: 10px;
+    padding: 10px;
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px orange;
+}
+
+#comment-form,
+#blogpost-form {
+    max-width: 75%;
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px orange;
+}
+
+form h2 {
+    text-align: center;
+    background-color: black;
+}
+
+form label {
+    display: block;
+    margin-bottom: 7px;
+    background-color: coral;
+}
+
+form input {
+    width: 90%;
+    padding: 5px;
+    margin: 3px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: black;
+    color: orange;
+}
+
+button { 
+    width: 90%;
+    padding: 5px;
+    margin: 3px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: black;
+    color: orange;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+p {
+    text-align: center;
+}
+
+#login-forms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form {
+   flex-grow: 1;
+   flex-basis: 30%;
+}
+
+.blogpost,
+.blogpost *,
+.comment,
+.comment * {
+    background-color: darkslategrey;
+}
+
+.hidden {
+    display: none;
+}
+
+.comment {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px orange;
+    border: none;
+}
+
+.comments h2 {
+    width: 80%;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.blog-links {
+    text-decoration: none;
+}
+
+.blogpost p, .comment p {
+    text-align: right;
+    padding-left: 20px;
+    padidng: right 40px;
+    padding: 10px;
+}
+
+.blogpost h3, .comment h3 {
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+    color: black;
+}
